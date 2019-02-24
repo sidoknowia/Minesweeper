@@ -354,7 +354,7 @@ export default class Board extends Component{
             alert("Game Over! Start a new game");
             return false;
         }
-        if(sq.show){
+        if(sq.show && sq.diffused){
             return false;
         }
         let r = sq.row;
